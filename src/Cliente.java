@@ -1,29 +1,20 @@
 
-public class Estudiante {
+public class Cliente {
+
     private int id = 0;
     private String telefono = "";
-    private String nombreEstudiante="";
-    private int ahnosEstudiante = 0;
+    private String nombreCliente = "";
 
     public String getNombreEstudiante() {
-        return nombreEstudiante;
+        return nombreCliente;
     }
 
     public void setNombreEstudiante(String nombreEstudiante) {
-        this.nombreEstudiante = nombreEstudiante;
-    }
-
-    public int getAhnosEstudiante() {
-        return ahnosEstudiante;
-    }
-
-    public void setAhnosEstudiante(int ahnosEstudiante) {
-        this.ahnosEstudiante = ahnosEstudiante;
+        this.nombreCliente = nombreEstudiante;
     }
     
-
     public String getTelefono() {
-        String nuevoTelefono= "(506) "+telefono.substring(0, 4)+"-"+telefono.substring(4, 8);
+        String nuevoTelefono = "(506) " + telefono.substring(0, 4) + "-" + telefono.substring(4, 8);
         return nuevoTelefono;
     }
 
@@ -42,13 +33,13 @@ public class Estudiante {
     public void setId(int id) {
         this.id = id;
     }
-    
-    public void modificarDatos(int id){
-        
+
+    public void modificarDatos(int id) {
+
     }
-    public void eliminarEstudiante(int id){
-        
+
+    public void eliminarCliente(int id) {
+
     }
-    
-    
+
 }
