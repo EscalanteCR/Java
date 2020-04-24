@@ -1,18 +1,26 @@
 
 public class Cliente {
 
-    private int id = 0;
     private String telefono = "";
     private String nombreCliente = "";
+    public Plantel canchas = new Plantel();
 
-    public String getNombreEstudiante() {
+    public String getNombreCliente() {
         return nombreCliente;
     }
 
-    public void setNombreEstudiante(String nombreEstudiante) {
-        this.nombreCliente = nombreEstudiante;
+    public void setNombreCliente(String nombreCliente) {
+        this.nombreCliente = nombreCliente;
     }
-    
+
+    public Plantel getCanchas() {
+        return canchas;
+    }
+
+    public void setCanchas(Plantel canchas) {
+        this.canchas = canchas;
+    }
+
     public String getTelefono() {
         String nuevoTelefono = "(506) " + telefono.substring(0, 4) + "-" + telefono.substring(4, 8);
         return nuevoTelefono;
@@ -24,14 +32,6 @@ public class Cliente {
         } else {
             System.out.println("El numero no cumple con los requisitos.");
         }
-    }
-
-    public int getId() {
-        return this.id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public void modificarDatos(int id) {
